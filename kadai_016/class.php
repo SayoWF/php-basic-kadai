@@ -16,8 +16,7 @@
             private $price;
 
             // メソッドを定義する
-            public function set_price(string $name, int $price) {
-                $this->name = $name;
+            public function set_price(int $price) {
                 $this->price = $price;
             }
 
@@ -42,10 +41,8 @@
             private $weight;
 
             // メソッドを定義する
-            public function set_hight(string $name, int $height, int $weight) {
-                $this->name = $name;
+            public function set_hight(int $height) {
                 $this->height = $height;
-                $this->weight = $weight;
             }
             public function show_height() {
                 echo $this->height . '<br>';
@@ -73,8 +70,8 @@
         echo '<br>';
 
        // メソッドにアクセスして実行する
-       $food->show_price(250);
-       $animal->show_height(60);
+       $food->show_price();
+       $animal->show_height();
 
         ?>
     </p>
